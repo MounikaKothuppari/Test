@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>JSON Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/maincss.css">
+</head>
+
+<body>
+<table id="tableID">
+<tr><td></td>
+<td>Column</td>
+<td>ColumnType</td>
+<td>Editable</td>
+</tr></table>
+    <div id="popupID">
+        ColumnName:
+        <input type="text" id="columnID" value="">
+         ColumnType:
+         <input list="columntypeValues" id="columntypeID" value="">
+        <datalist id="columntypeValues">
+            <option value=""><option value="String">
+                <option value="Number">
+                    <option value="Boolean">
+                        <option value="Date">
+        </datalist>
+        <br>
+        Editable:
+        <input list="editableValues" id="editableID" value="">
+        <datalist id="editableValues">
+            <option value="">
+            <option value="YES">
+                <option value="NO">
+        </datalist>
+        <button id="popupAddColumn">AddColumn</button>
+    </div>
+    <div id="cover"> </div>
+        <script type="text/javascript" src="js/mainjs.js"></script>
+</body>
+
+</html>
